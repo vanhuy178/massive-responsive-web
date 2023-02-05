@@ -1,0 +1,94 @@
+.intro {
+    background-image: url('../assets/img/intro.png');
+    background-attachment: fixed;
+
+    .intro__nav {
+        justify-content: space-between;
+
+        .nav-item {
+            width: 18%;
+            margin: 0;
+
+            .nav-link {
+                padding: 35px 40px;
+                position: relative;
+                border-radius: 0;
+                background-color: rgba(34, 34, 34, 0.05);
+                text-align: center;
+                color: $colorGray434343;
+                // padding: 35px 70px;
+                cursor: pointer;
+
+                i {
+                    font-size: 36px;
+                }
+
+                &.active {
+                    background-color: $colorWhite;
+                    color: $colorBlack222;
+
+                    &::after {
+                        position: absolute;
+                        bottom: -$size-20;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        content: "";
+                        display: inline-block;
+                        border-style: solid;
+                        border-color: transparent;
+                        border-width: $size-10;
+                        border-top-color: white;
+                        opacity: 1;
+                    }
+
+                }
+
+                &:hover {
+                    background-color: $colorWhite;
+                    color: $colorBlack222;
+
+                    &::after {
+                        position: absolute;
+                        bottom: -$size-20;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        content: "";
+                        display: inline-block;
+                        border-style: solid;
+                        border-color: transparent;
+                        border-width: $size-10;
+                        border-top-color: white;
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .intro__text {
+        .tab-pane {
+            line-height: $size-30 - 4;
+            padding: $size-30 0;
+
+            .intro__title {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: $size-50;
+
+                p {
+                    font-size: $size-15 - 3;
+                    color: $colorGray7e7e7e;
+                }
+
+                h3 {
+                    font-size: $size-30;
+                }
+            }
+
+            .intro__paragraph {}
+        }
+    }
+}

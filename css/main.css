@@ -1290,6 +1290,79 @@ header .navbar-brand img {
   color: #222;
 }
 
+.intro {
+  background-image: url("../assets/img/intro.png");
+  background-attachment: fixed;
+}
+.intro .intro__nav {
+  justify-content: space-between;
+}
+.intro .intro__nav .nav-item {
+  width: 18%;
+  margin: 0;
+}
+.intro .intro__nav .nav-item .nav-link {
+  padding: 35px 40px;
+  position: relative;
+  border-radius: 0;
+  background-color: rgba(34, 34, 34, 0.05);
+  text-align: center;
+  color: #434343;
+  cursor: pointer;
+}
+.intro .intro__nav .nav-item .nav-link i {
+  font-size: 36px;
+}
+.intro .intro__nav .nav-item .nav-link.active {
+  background-color: white;
+  color: #222;
+}
+.intro .intro__nav .nav-item .nav-link.active::after {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 10px;
+  border-top-color: white;
+  opacity: 1;
+}
+.intro .intro__nav .nav-item .nav-link:hover {
+  background-color: white;
+  color: #222;
+}
+.intro .intro__nav .nav-item .nav-link:hover::after {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 10px;
+  border-top-color: white;
+  opacity: 1;
+}
+.intro .intro__text .tab-pane {
+  line-height: 26px;
+  padding: 30px 0;
+}
+.intro .intro__text .tab-pane .intro__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.intro .intro__text .tab-pane .intro__title p {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.intro .intro__text .tab-pane .intro__title h3 {
+  font-size: 30px;
+}
 .section {
   padding: 100px 0;
 }
