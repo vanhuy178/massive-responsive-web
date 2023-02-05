@@ -1,0 +1,110 @@
+.skills {
+    background-image: url('../assets/img/skills.jpg');
+    @extend %bgImageFixed;
+
+    .skills__overlay {
+        background: $overlayBg;
+        width: 100%;
+        height: 100%;
+
+        .skills__content {
+            color: $colorWhite;
+
+            .skills__title {
+                height: 400px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 30px;
+
+                h2 {
+                    letter-spacing: 6px;
+
+                }
+            }
+
+            .skills__des {
+                padding: 0 $size-25;
+
+                h3 {
+                    margin-bottom: $size-30;
+                }
+
+                &>p {
+                    color: white;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+                }
+
+                .skills__progress {
+                    padding-top: $size-30;
+
+                    .progressBar {
+                        height: $size-20;
+                        position: relative;
+                        background-color: #606060;
+                        margin: $size-10 0 $size-50 0;
+
+                        &.active:first-child .progressBar__run {
+                            width: 96%;
+                        }
+
+                        &.active:nth-child(2) .progressBar__run {
+                            width: 96%;
+                        }
+
+                        &.active:last-child .progressBar__run {
+                            width: 96%;
+                        }
+
+                        .progressBar__run {
+                            width: $size-10;
+                            height: 100%;
+                            position: absolute;
+                            background-color: $colorWhite;
+                            transition: width 2.6s ease;
+
+                            .progressBar__counter {
+                                min-width: $size-25;
+                                border-radius: $size-30;
+                                background-color: $colorGraya4a4a4;
+                                position: absolute;
+                                top: -23px;
+                                right: -18px;
+                                text-align: center;
+                                font-size: $size-10;
+                                letter-spacing: 0;
+                                color: #222;
+                                padding: 0 8px;
+
+
+
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -7px;
+                                    left: 13px;
+                                    display: inline-block;
+                                    border-style: solid;
+                                    border-color: transparent;
+                                    border-width: 3.5px;
+                                    border-top-color: #a4a4a4;
+                                }
+                            }
+                        }
+
+                        .progressBar__text {
+                            position: absolute;
+                            font-size: $size-10;
+                            color: $colorBlack222;
+                            letter-spacing: 1px;
+                            line-height: $size-20;
+                            padding-left: $size-20;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.banner {
+    height: 100vh;
+    background-image: url('../assets/img/banner.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %bgImageFixed;
+
+    color: $colorWhite;
+
+    .banner__content {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+
+        h1 {
+            line-height: $lineHeightNormal;
+        }
+    }
+
+}

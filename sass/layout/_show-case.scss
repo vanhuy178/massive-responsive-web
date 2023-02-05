@@ -1,0 +1,169 @@
+.showcase {
+    .showcase-info.title-mini {
+        margin-bottom: 70px;
+    }
+
+    .showcase__filter {
+        .nav-pills {
+            .nav-item {
+                display: inline-block;
+                line-height: $size-40;
+
+                .nav-link {
+                    font-size: 14px;
+                    color: $colorGraya9a8a8;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    padding: 0;
+                    margin: 0 $size-15;
+                    cursor: pointer;
+                    background-color: $colorWhite;
+
+
+                    &:hover {
+                        color: $colorBlack222
+                    }
+                }
+
+                &.active {
+                    .nav-link {
+                        color: $colorBlack222
+                    }
+                }
+            }
+        }
+    }
+
+    .showcase__content {
+        margin-top: $size-50;
+
+        .showcase__item {
+            .showcase__info:hover {
+                opacity: 1;
+
+                .showcase__btn {
+                    top: 40%;
+                    margin-top: -55px;
+                    opacity: 1;
+                }
+
+                .showcase__des {
+                    bottom: 45%;
+                    margin-bottom: -90px;
+                    opacity: 1;
+                }
+
+            }
+
+
+
+            .showcase__photo {
+                position: relative;
+
+                .showcase__info {
+                    position: absolute;
+                    z-index: 100;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    border: 20px solid rgba(0, 0, 0, 0.1);
+                    background-color: rgba(255, 255, 255, 0.9);
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s;
+
+                    .showcase__btn {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        font-size: 35px;
+                        text-align: center;
+                        transform: translateY(45%);
+                        opacity: 0;
+                        transition: all 0.3s;
+
+                        a {
+                            color: $colorBlack222;
+                        }
+                    }
+
+                    .showcase__desc {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        transform: translateY(-55%);
+                        opacity: 0;
+                        transition: all 0.3s;
+
+                        h4 {
+                            a {
+                                @include styleText($colorBlack222, $size-15, $font-weight-medium);
+                                letter-spacing: 4px;
+                                line-height: 1.5;
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                        p {
+                            a {
+                                letter-spacing: 3px;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: 300;
+                                color: $colorGray757575;
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        opacity: 1;
+
+                        .showcase__btn {
+                            top: 40%;
+                            margin-top: -55px;
+                            opacity: 1;
+
+                            &:hover {
+                                a {
+                                    color: $activeHeaderNavItem;
+                                }
+                            }
+                        }
+
+                        .showcase__desc {
+                            bottom: 45%;
+                            margin-bottom: -90px;
+                            opacity: 1;
+
+                            h4 {
+                                a {
+                                    text-decoration: none;
+
+                                    &:hover {
+                                        color: $activeHeaderNavItem;
+                                    }
+                                }
+
+                            }
+
+                            p {
+                                a {
+                                    text-decoration: none;
+
+                                    &:hover {
+                                        color: $activeHeaderNavItem;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

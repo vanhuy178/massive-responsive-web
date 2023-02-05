@@ -1,0 +1,39 @@
+$start-size: 13;
+$end-size: 65;
+
+@for $index from $start-size through $end-size {
+    .font-size-#{$index} {
+        font-size: #{$index}px
+    }
+}
+
+$start-padding: 5;
+$end-padding: 70;
+
+@for $indexPadding from $start-padding through $end-padding {
+    .padding-#{$indexPadding} {
+        padding: #{$indexPadding}px;
+    }
+}
+
+$start-margin: 5;
+$end-margin: 40;
+
+@for $indexMargin from $start-margin through $end-margin {
+    .margin-#{$indexMargin} {
+        margin: #{$indexMargin}px
+    }
+}
+
+$font-weights: (
+    "medium": 300,
+    "normal": 600,
+    "bold": 700
+);
+
+@each $status,
+$weight in $font-weights {
+    .font-weight-#{$status} {
+        font-weight: $weight;
+    }
+}

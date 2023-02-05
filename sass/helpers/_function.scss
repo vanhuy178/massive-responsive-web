@@ -1,0 +1,11 @@
+@mixin d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin styleText($color-text, $size-text, $bold-text) {
+    color: $color-text;
+    font-size: $size-text;
+    font-weight: $bold-text;
+}
