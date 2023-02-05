@@ -1,0 +1,20 @@
+.btn {
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: $size-15 - 3;
+    line-height: 1.42857143;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px 30px;
+    transition: all 0.3s;
+}
+
+.btn--black {
+    background-color: $colorBlack222;
+    color: $colorWhite;
+
+    &:hover {
+        background-color: $activeHeaderNavItem;
+    }
+}

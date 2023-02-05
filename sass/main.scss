@@ -9,9 +9,6 @@
 @import './helpers/function';
 @import './helpers/extend';
 
-// componnent
-@import './components/section';
-@import './components/title-mini';
 
 // layout 
 @import './layout/header';
@@ -19,3 +16,11 @@
 @import './layout/design';
 @import './layout/skills';
 @import './layout/show-case';
+@import './layout/team';
+
+
+// componnent
+@import './components/section';
+@import './components/title-mini';
+@import './components/button';
+@import './components/button';

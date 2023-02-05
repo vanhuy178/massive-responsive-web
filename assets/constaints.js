@@ -27,9 +27,16 @@ const LIST__TITLE__CHAPTER = [
     { title: 'WE LOVE TO DESIGN THE CREATIVE', content: 'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore' },
     { title: 'CREATIVE SHOWCASE', content: 'We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge.' },
     { title: 'LASTEST BLOG', content: 'Sed sit amet iaculis nisi. Mauris ridiculus elementum non felis etewe blandit Pellentesque eu quam sem, ac malesuada leo sem quam pellente.' },
+    { title: 'WE HAVE A FABULOUS TEAM', content: 'We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge.' }
 ]
 
 const LIST_NAV_SHOWCASE = [
     'all', 'printing', 'web', 'illuatration', 'crafts'
 ]
 
+
+const LIST_MEMBER_OF_TEAM = [
+    { name: 'martin smith', job: 'founder & ceo', title: 'I LOVE MY STUDIO', content: "We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing" },
+    { name: 'franklin harbet', job: 'hr magnager', title: 'connecting people', content: "We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing" },
+    { name: 'linda anderson', job: 'marketing magnager', title: 'network builder', content: "We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing" },
+]

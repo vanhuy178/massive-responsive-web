@@ -22,6 +22,7 @@ $(document).ready(function () {
         let htmlContent = '';
         let renderDesignInfo = $('.design-info ');
         let renderShowcaseInfo = $('.showcase-info');
+        let renderFabulousTeam = $('.team-info');
         // rest render method
         LIST__TITLE__CHAPTER.map((item, index) => {
             if (item.title.toLocaleUpperCase() === 'WE LOVE TO DESIGN THE CREATIVE') {
@@ -31,6 +32,10 @@ $(document).ready(function () {
             else if (item.title.toLocaleUpperCase() === 'CREATIVE SHOWCASE') {
                 htmlContent = title(item.title, item.content);
                 renderShowcaseInfo.html(htmlContent)
+            }
+            else if (item.title.toLocaleUpperCase() === 'WE HAVE A FABULOUS TEAM') {
+                htmlContent = title(item.title, item.content);
+                renderFabulousTeam.html(htmlContent)
             }
         })
     }
@@ -53,4 +58,8 @@ $(document).ready(function () {
     renderShowCaseContent();
 
     renderModalShowcase()
+
+
+    // render the member of team team.js
+    renderTheMemberOfTheTeam()
 }) 
