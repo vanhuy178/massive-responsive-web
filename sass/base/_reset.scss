@@ -89,10 +89,28 @@ h6 {
 .col-xl-8,
 .col-xl-9,
 .col-xl-auto {
-    padding: 0;
+    padding: 0 30px;
     margin: 0;
 }
 
 .nav-link {
     padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+h2,
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 2px;
+    line-height: 1.5;
 }

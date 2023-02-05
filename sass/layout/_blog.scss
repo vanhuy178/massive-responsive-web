@@ -1,0 +1,105 @@
+.blog {
+    .blog-content {
+        .blog-photo {
+            figure {
+                position: relative;
+                margin: 0;
+
+                img {
+                    width: 100%;
+                }
+
+                figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-color: $bgBlackRGBA05;
+                    font-weight: 400;
+                    color: $colorWhite;
+                    padding: $size-10;
+                }
+            }
+        }
+
+        .blog-text {
+            padding: 30px 0;
+
+            .blog-tag {
+                margin-bottom: 10px;
+
+                li {
+                    display: inline;
+
+                    a {
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        @include styleText($colorGray909090, $size-10 , $font-weight-medium);
+
+                        &:hover {
+                            color: $activeHeaderNavItem;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .blog-title {
+                a {
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: $colorBlack222;
+
+                    &:hover {
+                        color: $activeHeaderNavItem;
+                    }
+                }
+            }
+
+            .blog-info-item {
+                font-size: $size-10 + 2;
+                margin-bottom: $size-25;
+
+                li {
+                    display: inline;
+
+                    a {
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        @include styleText($colorGray909090, $size-10 , $font-weight-medium);
+
+                        &:hover {
+                            color: $activeHeaderNavItem;
+                        }
+                    }
+
+                    &:first-child::after {
+                        content: "|";
+                        color: $colorGray909090;
+                        padding: 0 9px 0 8px;
+                    }
+                }
+            }
+
+            p {
+                color: #7e7e7e;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+
+            .blog-read {
+                position: relative;
+                text-transform: uppercase;
+                color: $coloGraybbb;
+                letter-spacing: 1px;
+
+                &:hover {
+                    color: $colorBlack222;
+                }
+            }
+        }
+    }
+}

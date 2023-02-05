@@ -44,6 +44,7 @@
 
 
             h3 {
+                letter-spacing: 2px;
                 @include styleText($colorWhite, $size-15 - 2, $font-weight-medium);
                 margin-bottom: 2px;
             }
@@ -51,7 +52,7 @@
             p {
 
                 letter-spacing: 2px;
-                @include styleText($colorGrayRGBA, $size-10 + 2, $font-weight-medium)
+                @include styleText($colorGrayRGBA, $size-10 , $font-weight-medium)
             }
         }
     }
