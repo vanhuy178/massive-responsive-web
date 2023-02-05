@@ -1,0 +1,23 @@
+.cover {
+    background-image: url('../assets/img/cover.jpg');
+    @extend %bgImageFixed;
+
+    &.section {
+        padding: 150px 0;
+    }
+
+    .cover-content {
+        .cover__text {
+            span {
+                letter-spacing: 3px;
+                @include styleText($colorYellowd6b161, $size-15 + 1, $font-weight-medium);
+            }
+
+            h1 {
+                @include styleText($colorWhite, $size-25 + 1, $font-weight-medium);
+                letter-spacing: 2px;
+                line-height: 1.5;
+            }
+        }
+    }
+}

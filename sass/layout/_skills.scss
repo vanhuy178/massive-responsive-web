@@ -95,10 +95,10 @@
 
                         .progressBar__text {
                             position: absolute;
-                            font-size: $size-10;
+                            font-size: $size-10 + 3;
                             color: $colorBlack222;
                             letter-spacing: 1px;
-                            line-height: $size-20;
+                            line-height: $size-25;
                             padding-left: $size-20;
                         }
                     }

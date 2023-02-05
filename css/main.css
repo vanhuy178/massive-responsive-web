@@ -733,7 +733,7 @@ h6 {
   font-weight: 700;
 }
 
-.skills, .banner {
+.cover, .skills, .banner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -905,10 +905,10 @@ header .navbar-brand img {
 }
 .skills .skills__overlay .skills__content .skills__des .skills__progress .progressBar .progressBar__text {
   position: absolute;
-  font-size: 10px;
+  font-size: 13px;
   color: #222;
   letter-spacing: 1px;
-  line-height: 20px;
+  line-height: 25px;
   padding-left: 20px;
 }
 
@@ -1164,6 +1164,26 @@ header .navbar-brand img {
   margin-top: 10px;
 }
 
+.cover {
+  background-image: url("../assets/img/cover.jpg");
+}
+.cover.section {
+  padding: 150px 0;
+}
+.cover .cover-content .cover__text span {
+  letter-spacing: 3px;
+  color: #d6b161;
+  font-size: 16px;
+  font-weight: 300;
+}
+.cover .cover-content .cover__text h1 {
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
 .section {
   padding: 100px 0;
 }
@@ -1198,6 +1218,7 @@ header .navbar-brand img {
 }
 
 .btn {
+  box-shadow: none;
   border: 1px solid transparent;
   border-radius: 0;
   font-size: 12px;
@@ -1208,6 +1229,9 @@ header .navbar-brand img {
   padding: 15px 30px;
   transition: all 0.3s;
 }
+.btn:focus {
+  box-shadow: none;
+}
 
 .btn--black {
   background-color: #222;
@@ -1215,9 +1239,25 @@ header .navbar-brand img {
 }
 .btn--black:hover {
   background-color: #d6b161;
+}
+.btn--black:focus {
+  background-color: #d6b161;
+}
+
+.btn--yellow {
+  background-color: #d6b161;
+}
+.btn--yellow:hover {
+  background-color: white;
+  color: #222;
+}
+.btn--yellow:focus {
+  background-color: white;
+  color: #222;
 }
 
 .btn {
+  box-shadow: none;
   border: 1px solid transparent;
   border-radius: 0;
   font-size: 12px;
@@ -1228,6 +1268,9 @@ header .navbar-brand img {
   padding: 15px 30px;
   transition: all 0.3s;
 }
+.btn:focus {
+  box-shadow: none;
+}
 
 .btn--black {
   background-color: #222;
@@ -1235,4 +1278,19 @@ header .navbar-brand img {
 }
 .btn--black:hover {
   background-color: #d6b161;
+}
+.btn--black:focus {
+  background-color: #d6b161;
+}
+
+.btn--yellow {
+  background-color: #d6b161;
+}
+.btn--yellow:hover {
+  background-color: white;
+  color: #222;
+}
+.btn--yellow:focus {
+  background-color: white;
+  color: #222;
 }/*# sourceMappingURL=main.css.map */
