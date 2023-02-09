@@ -1,3 +1,4 @@
+// TEAM SECTION
 .team {
     &.section {
         margin-bottom: 70px;
@@ -127,9 +128,16 @@
     }
 
     .team-promo {
-        background-color: #f5f5f5;
-        padding: $size-40;
+        padding: 0 $size-30;
         margin-top: $size-50 + $size-50;
+
+        .team-promo-img {
+            padding: $size-40 $size-20;
+            background-color: #f5f5f5;
+
+        }
+
+
 
         &__item {
             display: flex;
@@ -140,6 +148,7 @@
                 width: 75%;
 
                 h3 {
+                    color: $colorBlack222;
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     font-size: $size-15 + 3;

@@ -1,16 +1,16 @@
-// base 
+// BASE 
 @import './base/reset';
 @import './base/customize.scss';
 
 
-// helper
+// HELPER
 @import './helpers/mixin';
 @import './helpers/variable';
 @import './helpers/function';
 @import './helpers/extend';
 
 
-// layout 
+// LAYOUT 
 @import './layout/header';
 @import './layout/banner';
 @import './layout/design';
@@ -20,10 +20,30 @@
 @import './layout/cover';
 @import './layout/blog';
 @import './layout/intro';
+@import './layout/number';
+@import './layout/feedback';
+@import './layout/foooter';
+@import './layout/copyright';
+@import './layout/backToTop';
 
 
-// componnent
+// COMPONENT
 @import './components/section';
 @import './components/title-mini';
 @import './components/button';
 @import './components/button';
+
+
+//RESPONSIVE
+
+// LAPTOP
+@import './responsive/laptop/xl-screen';
+
+// DESTOP
+@import './responsive/destop/lg-screen';
+
+// IPAD
+@import './responsive/ipad/md-screen';
+
+// IPHONE 8
+@import './responsive/iphone-8/iphone8-screen';

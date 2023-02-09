@@ -1,0 +1,138 @@
+@media screen and (max-width: 375.99px) {
+
+    // BANNER 
+    .banner {
+        .banner__content {
+            h1 {
+                font-size: $size-35;
+            }
+
+            h2 {
+                font-size: $size-15;
+            }
+        }
+    }
+
+    // DESIGN
+    .design {
+        .design__content {
+            .design__item {
+                padding: $size-15 $size-10;
+
+                h2 {
+                    font-size: $size-20;
+                }
+            }
+        }
+    }
+
+    //SKILLS
+    .skills {
+        .skills__overlay {
+            .skills__content {
+                .skills__title {
+                    h2 {
+                        font-size: $size-20;
+                    }
+                }
+
+                .skills__des {
+                    padding: 0px $size-10;
+                }
+            }
+        }
+    }
+
+    // SHOWCASE
+    .showcase {
+        .showcase__filter {
+            .nav-pills {
+                background-color: $activeHeaderNavItem;
+
+                .nav-item {
+
+                    .nav-link {
+                        background-color: $activeHeaderNavItem;
+                        color: $bgWhiteRGBA;
+                        letter-spacing: 1px;
+                        margin: 0 $size-5;
+                        line-height: $size-55;
+                    }
+                }
+            }
+        }
+    }
+
+    // TEAM 
+    .team {
+        .team-promo {
+            padding: 0;
+            margin-top: $size-60;
+        }
+    }
+
+    // COVER
+    .cover {
+        &.section {
+            padding: 80px 0;
+        }
+
+        .cover-content {
+            .cover__text {
+                h1 {
+                    font-size: $size-25;
+                    padding: 0 $size-5;
+                }
+            }
+        }
+    }
+
+    // BLOG 
+    .blog {
+        .blog-content {
+            .blog-text {
+                .blog-tag {
+                    margin-bottom: $size-5;
+
+                    li {
+                        a {
+                            font-size: $size-15;
+                        }
+                    }
+                }
+
+                .blog-title {
+                    font-size: $size-25;
+                }
+
+                .blog-info-item {
+                    li {
+                        a {
+                            font-size: $size-15;
+
+                        }
+                    }
+
+                }
+
+                .blog-read {
+                    font-size: $size-25;
+                }
+            }
+        }
+    }
+
+    // FEEDBACK
+    .feedback {
+        .feedback-carousel {
+            padding: -0;
+        }
+
+        .owl-carousel {
+
+            .owl-dots.disabled {
+                display: block !important;
+            }
+        }
+    }
+}

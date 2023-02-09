@@ -1,3 +1,4 @@
+// CREATE ELEMENT FOR DESIGN SECTION
 let htmlContent = '';
 let renderDesignClass = $('.design__content');
 const renderDesignItem = () => {
@@ -9,7 +10,7 @@ const renderDesignItem = () => {
                 <div class="design__icon">
                     ${item.icon}
                 </div>
-                <h2 class="font-size-20">${item.title.toLocaleLowerCase()}</h2>
+                <h2 class="font-size-15">${item.title.toLocaleLowerCase()}</h2>
                 <p>${item.content}</p>
             </div>
         </div>

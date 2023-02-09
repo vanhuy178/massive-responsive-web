@@ -1,9 +1,9 @@
+// SET TITLE MINI FOR COMPONENT AT TITLE.JS
 .title-mini {
     margin-bottom: 130px;
-    // width: 80%;
-    // margin: 0 auto;
     text-align: center;
 
+    // H2 TITLE
     h2 {
         position: relative;
         text-transform: uppercase;
@@ -11,7 +11,9 @@
         margin-bottom: 20px;
         font-size: 25px;
         font-weight: 300;
+        color: $colorBlack222 !important;
 
+        // LINE 
         &::after {
             content: "";
             position: absolute;
@@ -24,10 +26,38 @@
         }
     }
 
+    // DESCRIPTION 
     p {
         width: 60%;
         margin: auto;
         line-height: 25px;
         color: $colorGray7e7e7e;
+    }
+}
+
+// DESKTOP
+@media screen and (max-width: 991.98px) {
+    .title-mini {
+        margin-bottom: 100px;
+
+        p {
+            width: 80%;
+        }
+    }
+}
+
+//I PHONE 8
+@media screen and (max-width: 375.99px) {
+
+    .title-mini {
+        margin-bottom: 80px;
+
+        p {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: $size-30;
+        }
     }
 }

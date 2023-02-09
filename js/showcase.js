@@ -1,4 +1,5 @@
 
+// RENDER NAV SHOWCASE
 renderNavItemOfShowcase = () => {
     let idPillTab = $('#pills-tab');
     let htmlContent = '';
@@ -14,7 +15,8 @@ renderNavItemOfShowcase = () => {
     });
     return idPillTab.html(htmlContent.join(''));
 }
-// let listlightBoxItem = []
+
+// CREATE AN OBJECT
 let lightboxHrefItem = {
     dataToggle: '',
     idElement: '',
@@ -23,18 +25,23 @@ let lightboxHrefItem = {
 let linkHref = '';
 let linkYoutobe = './assets/videos/showcase-9.mp4'
 
+// RENDER IMAGE ELEMENT OF THE SHOWCASE
 renderShowCaseContent = () => {
+    let arrayOfImageShowcase;
     let linkIcons = '<i class="fa-solid fa-link"></i>';
     let youtobeIcons = '<i class="fa-brands fa-youtube"></i>';
     let searchIcons = '<i class="fa-solid fa-magnifying-glass"></i>';
-    let htmlContent = '';
     let renderContentOfShowcase = $('.showcase__content');
-    let arrayOfImageShowcase = [];
+    let htmlContent = '';
+
+
+    arrayOfImageShowcase = []
     for (let i = 0; i < 8; i++) {
         let setupVariable = `showcase-${i}`;
         arrayOfImageShowcase.push(setupVariable);
     }
 
+    // TÙY BIẾN RENDER LINK ICON, LINK REF, LINK VIDEO, LINK IMAGE CHO CÁC TRỊ TRÍ TRONG SHOWCAE IMAGE 
     arrayOfImageShowcase.map((item, index) => {
         lightboxHrefItem = {
             dataToggle: ' data-toggle="modal"',
@@ -42,16 +49,10 @@ renderShowCaseContent = () => {
             href: `./assets/img/showcase-${index + 1}.jpg`,
             dataTarget: `data-target = #light-box-${index}`
         }
-
-        // if (index === 0 || index === 2 || index === 4 || index === 5) {
-        //     listlightBoxItem.push(lightboxHrefItem);
-        // }
-
-
         linkHref = 'href = "#"'
         htmlContent += (
             `
-            <div class="showcase__item tab-pane fade show active col-xl-3" id="pills-all">
+            <div class="showcase__item tab-pane fade show active col-sm-6 col-md-4 col-xl-3" id="pills-all">
             <div class="showcase__photo">
                 <img src="./assets/img/showcase-${index + 1}.jpg" alt="showcase-${index + 1}" style="width: 100%">
                 <div class="showcase__info">
@@ -85,6 +86,7 @@ renderShowCaseContent = () => {
 
     `
         )
+        // TÙY VÀO ĐIỀU KIỆN MÀ TRUYỀN VÀO HÀM ĐỂ RENDER LÊN GIAO DIỆN
         if (lightboxHrefItem.idElement === 'id = "light-box-0"' || lightboxHrefItem.idElement === 'id = "light-box-2"' || lightboxHrefItem.idElement === 'id = "light-box-4"' || lightboxHrefItem.idElement === 'id = "light-box-5"') {
             renderModalShowcase(lightboxHrefItem.idElement, lightboxHrefItem.href)
         }
@@ -96,9 +98,8 @@ renderShowCaseContent = () => {
     return renderContentOfShowcase.html(htmlContent)
 }
 
-
+// FUNTION FOR RENDER IMGAGE
 renderModalShowcase = (id, href) => {
-    // let htmlContent = listlightBoxItem.map(item => {
     let htmlContent = (
         `
                 <div class="modal fade" ${id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -110,7 +111,7 @@ renderModalShowcase = (id, href) => {
                         <span aria-hidden="true">&times;</span>
                     </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body p-0">
                         <img src="${href}" alt="${id}" style = "width: 100%"/>
                     </div>
                 </div>
@@ -121,6 +122,7 @@ renderModalShowcase = (id, href) => {
     // });
     $('.showcase').append(htmlContent)
 }
+// FUNTION FOR RENDER YOUTBE VIDEO
 renderYoutobeShowCase = () => {
     let videoContent = (
         `

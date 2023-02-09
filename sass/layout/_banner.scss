@@ -1,3 +1,4 @@
+// BANNER SECTION 
 .banner {
     height: 100vh;
     background-image: url('../assets/img/banner.jpg');
@@ -11,10 +12,17 @@
     .banner__content {
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 6px;
+
 
         h1 {
+            font-weight: 300 !important;
             line-height: $lineHeightNormal;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            letter-spacing: 6px;
+            font-weight: 300 !important;
         }
     }
 

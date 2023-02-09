@@ -1,0 +1,21 @@
+@media screen and (max-width: 1250px) {
+
+    // HEADER
+    header {
+        .navbar {
+            #navbarSupportedContent {
+                .navbar-nav {
+                    .nav-item {
+                        padding: $size-5;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback {
+        .feedback-carousel {
+            width: 90%;
+        }
+    }
+}

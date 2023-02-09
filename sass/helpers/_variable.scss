@@ -1,4 +1,4 @@
-// màu chữ
+//COLOR
 $activeHeaderNavItem: #d6b161;
 $colorGray595959: #595959;
 $colorGraya4a4a4: #a4a4a4;
@@ -11,19 +11,23 @@ $colorGray757575: #757575;
 $colorGray909090: #909090;
 $coloGraybbb: #bbb;
 $colorGray434343: #434343;
-$colorGrayRGBA: rgba(255, 255, 255, 0.5);
 $colorYellowd6b161: #d6b161;
+$colorBlack1b1b1b: #1b1b1b;
 
-// background color
+//COLOR RGBA
+$colorGrayRGBA: rgba(255, 255, 255, 0.5);
 $bgBlackRGBA: rgba(0, 0, 0, 0.7);
 $bgBlackRGBA05: rgba(0, 0, 0, 0.5);
 $bgWhiteRGBA : rgba(255, 255, 255, 0.9);
-// line height
+
+//LINE HEIHGT
 $lineHeightNormal: normal;
 $lineHeight-29: 29px;
 
-// overlays
+//LINENEAR COLOR
 $overlayBg: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%);
+
+//THE SIZE
 $size-5: 5px;
 $size-10: 10px;
 $size-15: 15px;
@@ -37,5 +41,6 @@ $size-50: 50px;
 $size-55: 55px;
 $size-60: 60px;
 
+// FRONT WEIGHT VARIABLE
 $font-weight-medium: 300;
 $font-weight-bold: 600

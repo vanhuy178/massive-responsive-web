@@ -40,3 +40,89 @@ const LIST_MEMBER_OF_TEAM = [
     { name: 'franklin harbet', job: 'hr magnager', title: 'connecting people', content: "We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing" },
     { name: 'linda anderson', job: 'marketing magnager', title: 'network builder', content: "We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing" },
 ]
+
+
+const LIST_NUMBER_SECTION = [
+    { icon: 'fa-layer-group', number: 40, title: 'HTML Multiple' },
+    { icon: 'fa-desktop', number: 30, title: 'ONE PAGE DEMO' },
+    { icon: 'fa-database', number: 87, title: 'USEFULL SHORTCODE', },
+    { icon: 'fa-chart-line', number: 17, title: 'DIFFERENT CATEGORY' }
+]
+const LIST_VARIABLE_OF_FOOTER =
+{
+    rencentPost: { title: 'recent posts', content: ['standard blog post', 'quotation post', 'audio post', 'massive video demo', 'blog image post'] },
+    followUs: { title: 'follow us', content: ['about massive', 'career', 'terms &amp; condition', 'privacy policy', 'contact us'] },
+    recentWork: { title: 'recent work', content: [1, 2, 3, 4, 5, 6, 7, 8, 9] }
+}
+const LIST_INTRO_SECTION = [
+    {
+        icon: 'mobile', headerTitle: 'we work together for fun', desc: 'full responsive', content: `In quis scelerisque velit. Proin pellentesque neque ut scelerisque
+    dapibus.
+    Praesent elementum feugiat dignissim.Nunc placerat mi id nisi interdum mollis.Praesent
+    pharetra, justo ut
+    scelerisque mattis, leo quam aliquet diam, congue laoreet elit metus eget diam.Proin ac
+    metus
+    diam.In quis
+    scelerisque velit.Proin pellentesque neque ut scelerisque dapibus.Praesent elementum
+    feugiat
+    dignissim.
+    Nunc placerat mi id nisi interdum mollis.Praesent pharetra, justo ut scelerisque mattis,
+        leo
+    quam aliquet
+    diam, congue laoreet elit metus eget diam.Proin ac metus diam.`},
+    {
+        icon: 'file', headerTitle: 'massive ui collection', desc: 'work for fun', content: `Leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac
+    metus diam.
+    In quis scelerisque velit. Proin pellentesque neque ut scelerisque dapibus. Praesent
+    elementum
+    feugiat
+    dignissim. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+    mattis, leo
+    quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam. In quis
+    scelerisque
+    velit.
+    Proin pellentesque neque ut scelerisque dapibus. Praesent elementum feugiat dignissim. Nunc
+    placerat mi id
+    nisi interdum mollis.` },
+    {
+        icon: 'lightbulb', headerTitle: 'massive ui collection', desc: 'work for fun', content: `Leo quam aliquet diam, congue laoreet elit metus eget diam. Proin ac
+    metus diam.
+    In quis scelerisque velit. Proin pellentesque neque ut scelerisque dapibus. Praesent
+    elementum
+    feugiat
+    dignissim. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+    mattis, leo
+    quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam. In quis
+    scelerisque
+    velit.
+    Proin pellentesque neque ut scelerisque dapibus. Praesent elementum feugiat dignissim. Nunc
+    placerat mi id
+    nisi interdum mollis.` },
+    {
+        icon: 'compass', headerTitle: 'huge possibilities', desc: 'multipurpose', content: `congue laoreet elit metus eget diam. Proin ac metus diam. In quis
+    scelerisque
+    velit. Proin pellentesque neque ut scelerisque dapibus. Praesent elementum feugiat
+    dignissim.
+    Nunc placerat
+    mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque mattis, leo quam aliquet
+    diam, congue
+    laoreet elit metus eget diam. Proin ac metus diam. In quis scelerisque velit. Proin
+    pellentesque
+    neque ut
+    scelerisque dapibus. Praesent elementum feugiat dignissim. Nunc placerat mi id nisi interdum
+    mollis.` },
+    {
+        icon: 'magnifying-glass', headerTitle: 'we work together for fun', desc: 'sky is the limit', content: `Proin ac metus diam. In quis scelerisque velit. Leo quam aliquet
+    diam,
+    congue
+    laoreet elit metus eget diam. Proin pellentesque neque ut scelerisque dapibus. Praesent
+    elementum feugiat
+    dignissim. Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+    mattis, leo
+    quam aliquet diam, congue laoreet elit metus eget diam. Proin ac metus diam. In quis
+    scelerisque
+    velit.
+    Proin pellentesque neque ut scelerisque dapibus. Praesent elementum feugiat dignissim. Nunc
+    placerat mi id
+    nisi interdum mollis.`},
+]

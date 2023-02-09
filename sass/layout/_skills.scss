@@ -1,3 +1,4 @@
+// SKILL SECTION
 .skills {
     background-image: url('../assets/img/skills.jpg');
     @extend %bgImageFixed;
@@ -45,16 +46,23 @@
                         background-color: #606060;
                         margin: $size-10 0 $size-50 0;
 
-                        &.active:first-child .progressBar__run {
-                            width: 96%;
+                        // .progressBar {
+                        &:first-child.active {
+                            .progressBar__run {
+                                width: 96%;
+                            }
                         }
 
-                        &.active:nth-child(2) .progressBar__run {
-                            width: 96%;
+                        &:nth-child(2).active {
+                            .progressBar__run {
+                                width: 96%;
+                            }
                         }
 
-                        &.active:last-child .progressBar__run {
-                            width: 96%;
+                        &:nth-child(3).active {
+                            .progressBar__run {
+                                width: 96%;
+                            }
                         }
 
                         .progressBar__run {

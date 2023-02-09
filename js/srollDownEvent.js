@@ -12,22 +12,4 @@ window.addEventListener('scroll', function () {
         navHeaer.removeClass(resizeWindow);
         progressBarClass.removeClass(active);
     }
-
-    // 
-    // if (this.window.scrollY === 0) {
-    //     progressBarClass.removeClass(active);
-    //     navHeaer.removeClass(resizeWindow);
-
-    // }
-    // else if (this.window.scrollY > 1000 && this.window.scrollY < 1500) {
-    //     progressBarClass.addClass(active);
-    // }
-    // else {
-    //     progressBarClass.addClass(active);
-    //     progressBarClass.addClass(active);
-
-
-    // }
 })
-
-

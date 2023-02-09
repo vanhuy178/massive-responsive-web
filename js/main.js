@@ -1,8 +1,10 @@
+// MAIN JS FILE
+
 $(document).ready(function () {
-    //header navbar
+    //CALL TO HEADER JS
     renderNavbarItem();
 
-    // handle active nav header 
+    // HANDLE ACTIVE EVENT IN ITEM OF NAVBAR HEADER
     let active = 'active';
     {
         let listNavItem = $('.header-nav-item a');
@@ -12,17 +14,17 @@ $(document).ready(function () {
         })
     }
 
-    // design.js 
+    // CALL TO DESIGN JS
     renderDesignItem()
 
-    // counter number of skill;
+    // COUNTER THE NUMBER OF THE SKILL SECTION;
     $('.counter').counterUp({
         delay: 20,
         time: 500
     })
 
 
-    // render infor title of each section
+    // RENDER TITLE FOR EACH SECTION HAS TITLE AND DESCRIPTION MINI
     {
         let htmlContent = '';
         let renderDesignInfo = $('.design-info ');
@@ -51,11 +53,11 @@ $(document).ready(function () {
     }
 
 
-    // rendert nav showcase layout
+    // RENDER NAVBAR FOR THE SHOWCASE
     renderNavItemOfShowcase()
 
 
-    // handle nav showcase item 
+    // HANDLE ELEMENTS OF THE SHOWCASE 
     {
         let showcaseNavItem = $('.showcase__filter .nav-item');
         showcaseNavItem.on('click', function () {
@@ -64,17 +66,34 @@ $(document).ready(function () {
         })
     }
 
-    // show list image of show case layout
+    // CALL LIST OF IMAGE'S SHOWCASE 
     renderShowCaseContent();
 
+    // RENDER MODAL OF THE SHOWCASE
     renderModalShowcase()
 
 
-    // render the member of team team.js
+    // RENDER THE MEMBER OF THE TEAM JS
     renderTheMemberOfTheTeam()
+    // SETTING CAROUSEL FOR THE MEMBER OF TEAM
+    $('.number-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
 
-
-    // setting time for blog section 
+    // SETTING TIME FOR BLOG SECTION 
     let timeSetting = $('#time');
     // take realtime
     const dayRealtime = new Date();
@@ -88,6 +107,70 @@ $(document).ready(function () {
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let renderTimeNow = ` ${months[month].slice(0, 3)} ${date}, ${year}`;
     // let renderTimeNow = `${hour}:${minute} ${ampm} - ${date}/${months[month].slice(0, 3)}/${year}`;
-
     timeSetting.html(renderTimeNow);
-}) 
+
+    // COUNTERT THE NUMBER OF THE NUMBER SECTION 
+    renderNumberSection()
+    $('.number__counter').counterUp({
+        delay: 20,
+        time: 500
+    })
+
+    // RENDER INTRO CONTENT
+    renderIntroContent()
+
+
+    // SHOW OWL CAROUSEL AT FEEDBACK SECTION
+    $('.feedback-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplayTimeout: 1000,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 1
+            }
+            // ,
+            // 600: {
+            //     items: 1
+            // }
+
+            ,
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+
+
+    // SHOW CAROUSEL AT THE PARTNER SECTION
+    $(".partners___carousel").owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 2
+            },
+            500: {
+                items: 3
+            }
+            ,
+            784: {
+                items: 4
+            }
+            ,
+            1215: {
+                items: 6
+            }
+        }
+    });
+
+
+})

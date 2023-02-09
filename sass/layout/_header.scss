@@ -1,3 +1,4 @@
+// HEADER SECTION
 header {
     .navbar {
         width: 100%;
@@ -5,11 +6,17 @@ header {
         z-index: 1000;
         box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
 
+        .navbar-brand {
+            img {
+                height: 96px;
+            }
+        }
 
         #navbarSupportedContent {
             .navbar-nav {
                 .nav-item {
                     line-height: $lineHeight-29;
+                    padding: $size-10;
 
                     .nav-link {
                         color: $colorWhite !important;

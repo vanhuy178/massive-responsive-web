@@ -1,0 +1,39 @@
+// COPYRIGHT SECTION 
+.copyright {
+    border-top: 1px solid #2c2c2c;
+    background-color: #1b1b1b;
+
+    &.section {
+        padding: 30px 0;
+    }
+
+    .copyright__content {
+        .copyright__text {
+            color: #6f7273;
+            margin-top: 10px;
+        }
+
+        .copyright__social {
+            text-align: right;
+
+            a {
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border: 1px solid #5a5a5a;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 20px;
+                color: #5a5a5a;
+                margin-right: 15px;
+
+                &:hover {
+                    border-color: transparent;
+                    background-color: #5a5a5a;
+                    color: white;
+                }
+            }
+        }
+    }
+}

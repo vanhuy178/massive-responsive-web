@@ -1,3 +1,4 @@
+// INTRO SECTION
 .intro {
     background-image: url('../assets/img/intro.png');
     background-attachment: fixed;
@@ -84,6 +85,7 @@
                 }
 
                 h3 {
+                    color: $colorBlack222 ;
                     font-size: $size-30;
                 }
             }
